@@ -22,7 +22,7 @@ setup_vim() {
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   # clone personal .vimrc
   curl https://gist.githubusercontent.com/alexshd/756459d0e840c02d47ee/raw/d6235761fb360bad93db6017f3fedbd65a871ab1/.vimrc > ~/.vimrc
-	vim +PluginInstall +qall  2>&1
+  vim +PluginInstall +qall  2>&1
 
   return 0
 }
@@ -59,8 +59,8 @@ main() {
   ubuntu_update
   base_packages
   install_chef
-	install_zsh
-	config_zsh
+  install_zsh
+  config_zsh
   setup_vim
   return 0
 }
