@@ -6,8 +6,7 @@ ubuntu_update() {
 }
 
 base_packages() {
-    for package_name in tmux vim git zsh mlocate httpie curl unzip
-    do
+    for package_name in tmux vim git zsh mlocate httpie curl unzip; do
         sudo apt-get install $package_name -y -qq
     done
     return 0
@@ -24,7 +23,7 @@ setup_vim() {
     # clone personal .vimrc
     curl \
     https://gist.githubusercontent.com/alexshd/756459d0e840c02d47ee/raw/d6235761fb360bad93db6017f3fedbd65a871ab1/.vimrc \
-        > ~/.vimrc
+    > ~/.vimrc
     vim +PluginInstall +qall  2>&1
 
     return 0
