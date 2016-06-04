@@ -44,7 +44,7 @@ plugins=(git tmux httpie ubuntu apt \
           knife pip rake ruby vundle docker-compose\
           colorize bower npm docker)
 
-source "${ZSH}"/oh-my-zsh.sh
+source \${ZSH}/oh-my-zsh.sh
 
 export TERM=screen-256color
 export LANG=en_US.UTF-8
