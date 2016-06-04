@@ -38,15 +38,12 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="pygmalion"
 
-plugins=(git tmux httpie ubuntu apt \
-          common-aliases cp \
-          extract gem history \
-          history-substring-search  \
-          knife pip rake ruby vundle docker-compose\
-          colorize bower npm docker)
+plugins=(git tmux httpie ubuntu apt common-aliases cp extract gem history history-substring-search knife pip rake ruby vundle docker-compose colorize bower npm docker)
 
 source "\${ZSH}/oh-my-zsh.sh"
 
+# use ruby chef
+export PATH=$PATH:/opt/chef/embedded/bin
 export TERM=screen-256color
 export LANG=en_US.UTF-8
 export EDITOR=vim
