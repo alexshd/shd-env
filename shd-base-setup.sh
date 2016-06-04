@@ -6,9 +6,7 @@ ubuntu_update() {
 }
 
 base_packages() {
-    for package_name in tmux vim git zsh mlocate httpie curl unzip; do
-        sudo apt-get install $package_name -y -qq
-    done
+    sudo apt-get install tmux vim git zsh mlocate httpie curl unzip -y -qq
     return 0
 }
 
