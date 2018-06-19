@@ -5,6 +5,11 @@ ubuntu_update() {
     return 0
 }
 
+base_packages_yum() {
+    sudo yum install tmux vim-enhanced git zsh mlocate curl unzip -y
+    return 0
+}
+
 base_packages() {
     sudo apt-get install tmux vim git zsh mlocate httpie curl unzip -y -qq
     return 0
