@@ -17,6 +17,7 @@ base_packages() {
 
 install_chef() {
     curl -L https://www.chef.io/chef/install.sh | sudo bash
+    # curl -LO https://omnitruck.chef.io/install.sh && sudo bash ./install.sh -v 12.22.5
     return 0
 }
 
