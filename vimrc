@@ -27,6 +27,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
 Plugin 'Auto-Pairs'
+Plugin 'chr4/nginx.vim'
 
 call vundle#end()
 filetype plugin indent on
