@@ -26,7 +26,7 @@ setup_vim() {
 	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	# clone personal .vimrc
 	curl \
-		https://raw.githubusercontent.com/alexshd/shd-env/v4/vimrc \
+		https://raw.githubusercontent.com/alexshd/shd-env/v7/vimrc \
 		>~/.vimrc
 	vim +PluginInstall +qall 2>&1
 
